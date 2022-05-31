@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+body{
+    font-size: 13px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    background: rgb(227, 233, 231) !important;
+}
+
+.rounded-xl.bg-info {
+    text-align: center !important;
+    font-size: 20px !important;
+    width: 100px;
+    color: white;
+  }
+
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
