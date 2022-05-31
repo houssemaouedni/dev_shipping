@@ -26,7 +26,6 @@ class ClientController extends Controller
             ]);
             $id[] = $client->id;
         }
-
         return $id ;
     }
 
