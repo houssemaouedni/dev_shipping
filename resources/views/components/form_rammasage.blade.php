@@ -27,13 +27,7 @@
                             name="email[0][email]"
                             required autocomplete="" />
         </div>
-        <div class="col-6">
-            <x-label for="orderid" :value="__('N° de commande')" />
-            <x-input id="orderid" class="block mt-1 p-2 w-full"
-                            type="text"
-                            name="orderid[0][orderid]"
-                            required autocomplete="" />
-        </div>
+
     </div>
 
     <div class="mt-1">

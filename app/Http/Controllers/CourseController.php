@@ -45,8 +45,6 @@ class CourseController extends Controller
             $image = new ImageUploadController;
             $imageUploader = $image->upload($request['thumbnail'][$i]['thumbnail']);
 
-
-
             $course = Course::create([
                 'stop_id' => $stopId,
                 'client_id' => $clientId[$i],

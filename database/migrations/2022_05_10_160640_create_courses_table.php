@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('stop_id')->constrained();
             $table->foreignId('client_id')->constrained();
-            $table->foreignId('ramassage_id')->constrained();
+            $table->foreignId('ramassage_id')->constrained()->nullable();
             $table->string('ramassage_avant')->nullable();
             $table->string('livraison_avant')->nullable();
             $table->float('prix')->nullable();
-            $table->foreignId('livraison_id')->constrained();
+            $table->foreignId('livraison_id')->constrained()->nullable();
             $table->text('description');
             $table->string('thumbnail')->nullable();
             $table->float('etat')->nullable();

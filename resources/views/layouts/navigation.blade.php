@@ -27,8 +27,12 @@
                         {{ __('Course') }}
                     </x-nav-link>
                 @else
-                <x-nav-link :href="route('admin_admin')" :active="request()->routeIs('dashboard/admin')">
+                <x-nav-link :href="route('admin_admin')" :active="request()->routeIs(['admin_admin'])">
                     {{ __('Tableau de bord') }}
+                </x-nav-link>
+
+                <x-nav-link :href="route('admin_client')" :active="request()->routeIs(['admin_client','admin_client_show'])">
+                    {{ __('Liste des client') }}
                 </x-nav-link>
                 @endif
 

@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('numero_de_stop')->nullable();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('course_id');
             $table->timestamps();
         });
     }
