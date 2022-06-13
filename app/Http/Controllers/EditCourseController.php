@@ -28,7 +28,8 @@ class EditCourseController extends Controller
                 $course->update([
                     'description' => $request->description,
                     'ramassage_avant' => $request->ramassage_avant,
-                    'etat' => '0'
+                    'etat' => '0',
+                    'prix' => null
                 ]);
             return redirect('/dashboard')->with('success', 'Course update avec succeé');
         } catch (\Throwable $th) {
@@ -51,7 +52,8 @@ class EditCourseController extends Controller
             $course->update([
                 'description' => $request->description,
                 'livraison_avant' => $request->livraison_avant,
-                'etat' => '0'
+                'etat' => '0',
+                'prix' => null
             ]);
         return redirect('/dashboard')->with('success', 'Course update avec succeé');
         } catch (\Throwable $th) {

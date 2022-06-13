@@ -34,12 +34,7 @@
                             required autocomplete="" />
         </div>
         <div class="col-6">
-            <x-label for="orderid" :value="__('N° de commande')" />
-            <x-input id="orderid" class="block mt-1 p-2 w-full"
-                            type="text"
-                            name="orderid"
-                            {{-- value="{{ $course->orderid }}" --}}
-                            required autocomplete="" />
+
         </div>
     </div>
     @if(isset($course->ramassage->adresse))

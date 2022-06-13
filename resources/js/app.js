@@ -16,6 +16,8 @@ $(function () {
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ],
+        pageLength: 5,
+        order:  [[ 7, 'asc' ]],
         processing: true,
         serverSide: true,
         autoWidth: false,
@@ -61,10 +63,12 @@ $(function () {
         search: "Recherche",
         searchPlaceholder: "Recher...",
         lengthMenu: "Voir _MENU_ Courses",
+
         info: "Voir _START_ > _END_ Total _TOTAL_ Courses",
         paginate: {
         next:       "Suivant",
-        previous:   "Précédent"
+        previous:   "Précédent",
+
     },
     }
 
@@ -153,7 +157,7 @@ btnLivraison.addEventListener("click", function(){
 
         });
 
-
+document.querySelectorAll
 /***
  * creation de la formulaire de creation des courses
  */
@@ -191,10 +195,7 @@ Adresse mail
  <input class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block m-1 p-2 w-full" id="email" type="email" name="email[`+i+`][email]" required="required" autocomplete="">
 </div>
 <div class="col-6">
- <label class="block font-medium text-sm text-gray-700" for="orderid">
-N° de commande
-</label>
- <input class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 p-2 w-full" id="orderid" type="text" name="orderid[`+i+`][orderid]" required="required" autocomplete="">
+
 </div>
 </div>
 
@@ -256,11 +257,7 @@ Adresse mail
  <input class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block m-1 p-2 w-full" id="email" type="email" name="email[`+i+`][email]" required="required" autocomplete="">
 </div>
 <div class="col-6">
- <label class="block font-medium text-sm text-gray-700" for="orderid">
-N° de commande
-</label>
- <input class="rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block mt-1 p-2 w-full" id="orderid" type="text" name="orderid[`+i+`][orderid]" required="required" autocomplete="">
-</div>
+
 </div>
 
 <div class="mt-1">

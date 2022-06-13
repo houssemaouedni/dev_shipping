@@ -14,7 +14,7 @@ body{
 
 .rounded-xl.bg-info {
     text-align: center !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     width: 100px;
     color: white;
   }
@@ -26,4 +26,9 @@ body{
 
 .d-block{
     display: block;
+}
+
+
+.marg-left.badge.bg-primary.text-white.rounded-xs.text-xs{
+    margin-left: 900px;
 }

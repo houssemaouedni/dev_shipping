@@ -5089,6 +5089,8 @@ $(function () {
   var table = $('#ddd').DataTable({
     dom: 'Bfrtip',
     buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+    pageLength: 5,
+    order: [[7, 'asc']],
     processing: true,
     serverSide: true,
     autoWidth: false,
@@ -5243,6 +5245,7 @@ btnLivraison.addEventListener("click", function () {
   btnLivraison.innerText = "Ajouter plusieur point de Livraisons";
   btnLivraison.classList.replace("btn-success", "btn-primary");
 });
+document.querySelectorAll;
 /***
  * creation de la formulaire de creation des courses
  */
